@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="stylesheet" href="./homepageStylesheet.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- USED WHEN ONLINE   -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- USED WHEN OFFLINE -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
 <style>
 table, th, td {
   border: 1px solid black;
@@ -9,6 +36,46 @@ table, th, td {
 </style>
 </head>
 <body>
+
+  <nav class="navbar navbar-dark navbar-expand-sm mynav navbar-light">
+      <a class="navbar-brand" href="#">Make N Bake</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="log_in.html">Log In</a>
+          </li>
+          <!-- MAKE LOGIN BUTTON SEPARARTE -->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+       
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
 
 <table style="width:100%" id="main_table">
   <tr>
@@ -20,6 +87,12 @@ table, th, td {
   </tr>
 
 </table>
+
+<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn" id="logout-btn">
+							SignOut
+						</button>
+					</div>
 
 <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase.js"></script>

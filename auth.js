@@ -11,13 +11,13 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-const db = firebase.firestore();
-db.settings({ timestampsInSnapshots: true });
+// const db = firebase.database();
+// db.settings({ timestampsInSnapshots: true });
 
 //SIGNUP NEW USER
 //ID OF SIGN UP FORM IS "signUpForm"
 
-const signUpForm = document.querySelector("#signUpForm");
+/*const signUpForm = document.querySelector("#signUpForm");
 
 if (signUpForm != null) {
     signUpForm.addEventListener("submit", event => {
@@ -42,13 +42,12 @@ if (signUpForm != null) {
             signUpForm.reset();
         });
     });
-}
+}*/
 
 
 //SIGN IN FORM
-//SIMILAR FORMAT AS ABOVE
 
-const signInForm = document.querySelector("#signInForm");
+/*const signInForm = document.querySelector("#signInForm");
 if (signInForm != null) {
     signInForm.addEventListener("submit", event => {
         event.preventDefault();
@@ -56,7 +55,114 @@ if (signInForm != null) {
         const password = signInForm["password"].value;
 
         auth.signInWithEmailAndPassword(email, password).then(cred => {
-            console.log(cred);
+            console.log(email);
         });
+    });
+}*/
+
+var btn = document.getElementById("sub-btn");
+if (btn) {
+    btn.addEventListener("click", hello);
+}
+var login = document.getElementById("login-btn");
+if (login) {
+    login.addEventListener("click", function (event) {
+        event.preventDefault();
+        loginn();
+    });
+}
+var lout = document.getElementById("logout-btn");
+if (lout) {
+    lout.addEventListener("click", function (event) {
+        event.preventDefault();
+        logoutt();
+    })
+}
+
+function hello(e) {
+    e.preventDefault();
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    // console.log(email, pass);
+
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function (user) {
+        window.location.href = "hacks.html";
+    })
+        .catch(function (error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+        });
+
+    // window.location.href = "hacks.html"
+
+    console.log("user signed up");
+    //console.log();
+}
+
+function logoutt() {
+    // e.preventDefault();
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    // console.log(email, pass);
+
+    firebase.auth().signOut().then(function (user) {
+        window.location.href = "index.html";
+    })
+        .catch(function (error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+        });
+
+    // window.location.href = "hacks.html"
+
+    console.log("user signed out");
+    //console.log();
+}
+
+function loginn() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    firebase.auth().signInWithEmailAndPassword(email, password).then(
+        function () {
+            firebase.auth().onAuthStateChanged(function (user) {
+                if (user.email == "a@a.com") {
+                    window.location.href = "contact_table.html";
+                }
+                else {
+                    window.location.href = "baking_hacks.html";
+                    //console.log(email);
+                }
+            }
+            )
+        }
+    ).catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+        var u = checkUser();
+        if (u) {
+            console.log(u);
+        }
+        else console.log("No user");
+    });
+}
+
+function checkUser() {
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            // User is signed in.
+            return user.email;
+            // ...
+        } else {
+            // User is signed out.
+            // ...
+            console.log("not logged in");
+            return null;
+        }
     });
 }

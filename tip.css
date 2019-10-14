@@ -1,0 +1,452 @@
+.mynav {
+  background: linear-gradient(50deg,rgb(218, 15, 92),rgb(207, 34, 101),rgb(209, 53, 170),rgb(228, 82, 191));
+  
+}
+
+.mySearchButton {
+  background-color: blueviolet;
+  margin: auto;
+  margin-top: 5px;
+}
+.m {
+  margin: auto;
+}
+
+.myCircularPictures {
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  border: 5px solid rgb(253, 77, 151);
+}
+
+.myCircles {
+  margin-top: 2rem;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+
+.container-1 {
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.featuredRecipe {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+.myFeaturedRecipes {
+  /* modifyThisDivLater */
+}
+.mySummary {
+  margin: auto;
+  padding: 1rem;
+}
+.my-picture-circle {
+  height: 20rem;
+  width: 20rem;
+  padding: 0;
+  margin-right: 1rem;
+}
+.mySummaryText {
+  max-width: 40rem;
+  margin-left: 1rem;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.signUpBox {
+  padding: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+/*==================== 
+	Footer 
+====================== */
+
+/* Main Footer */
+footer .main-footer {
+  padding: 20px 0;
+  background: #300c83;
+}
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Copy Right Footer */
+.footer-copyright {
+  background: #222;
+  padding: 5px 0;
+}
+.footer-copyright .logo {
+  display: inherit;
+}
+.footer-copyright nav {
+  float: right;
+  margin-top: 5px;
+}
+.footer-copyright nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-copyright nav ul li {
+  border-left: 1px solid #505050;
+  display: inline-block;
+  line-height: 12px;
+  margin: 0;
+  padding: 0 8px;
+}
+.footer-copyright nav ul li a {
+  color: #969696;
+}
+.footer-copyright nav ul li:first-child {
+  border: medium none;
+  padding-left: 0;
+}
+.footer-copyright p {
+  color: #969696;
+  margin: 2px 0 0;
+}
+
+/* Footer Top */
+.footer-top {
+  background: #252525;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #222;
+}
+
+/* Footer transparent */
+footer.transparent .footer-top,
+footer.transparent .main-footer {
+  background: transparent;
+}
+footer.transparent .footer-copyright {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Footer light */
+footer.light .footer-top {
+  background: #f9f9f9;
+}
+footer.light .main-footer {
+  background: #f9f9f9;
+}
+footer.light .footer-copyright {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Footer 4 */
+.footer- .logo {
+  display: inline-block;
+}
+
+/*==================== 
+	Widgets 
+====================== */
+.widget {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.widget.widget-last {
+  margin-bottom: 0px;
+}
+.widget.no-box {
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+}
+.widget.subscribe p {
+  margin-bottom: 18px;
+}
+.widget li a {
+  color: antiquewhite;
+}
+.widget li a:hover {
+  color: #4b92dc;
+}
+.widget-title {
+  margin-bottom: 20px;
+}
+.widget-title span {
+  background: #839fad none repeat scroll 0 0;
+  display: block;
+  height: 1px;
+  margin-top: 25px;
+  position: relative;
+  width: 20%;
+}
+.widget-title span::after {
+  background: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  top: -4px;
+  width: 50%;
+}
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.widget .badge {
+  float: right;
+  background: #7f7f7f;
+}
+
+.typo-light h1,
+.typo-light h2,
+.typo-light h3,
+.typo-light h4,
+.typo-light h5,
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small {
+  color: #fff;
+}
+
+ul.social-footer2 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+ul.social-footer2 li {
+  display: inline-block;
+  padding: 0;
+}
+ul.social-footer2 li a:hover {
+  background-color: #ff8d1e;
+}
+ul.social-footer2 li a {
+  display: block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.btn {
+  background-color: #ff8d1e;
+  color: #fff;
+}
+.btn:hover,
+.btn:focus,
+.btn.active {
+  background: #4b92dc;
+  color: #fff;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 250ms ease-in-out 0s;
+  -moz-transition: all 250ms ease-in-out 0s;
+  -ms-transition: all 250ms ease-in-out 0s;
+  -o-transition: all 250ms ease-in-out 0s;
+  transition: all 250ms ease-in-out 0s;
+}
+.fonty {
+  font-family: "Snell Roundhand", cursive;
+}
+.aboutme {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.myInfo {
+  max-width: 60rem;
+  padding: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.myPic {
+  max-width: 20rem;
+  border-radius: 30px; /* USE THIS FOR CHANGING PIC BORDER ROUNDEDNESS */
+}
+
+.footer-highlights {
+  color: antiquewhite;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+.body2 {
+  padding-top: 56px;
+}
+
+.sidebar-signUpBox {
+  padding: 1rem;
+}
+.pos {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+.imgji {
+  width: "750";
+  height: "300";
+}
+.myfooter {
+  width: 100%;
+}
+
+.recipe {
+  border: 2px solid rgb(34, 31, 31);
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(253, 179, 214), white);
+}
+
+.jumbotron {
+  background: rgb(255, 159, 175);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('./images/dessert_table.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+.tip {
+   border: solid rgb(248, 17, 140) 5px; 
+  /* border: solid white 2px; */
+}

@@ -1,5 +1,6 @@
 .mynav {
-  background-color: paleturquoise;
+  background: linear-gradient(50deg,rgb(218, 15, 92),rgb(207, 34, 101),rgb(209, 53, 170),rgb(228, 82, 191));
+  
 }
 
 .mySearchButton {
@@ -15,7 +16,7 @@
   width: 200px;
   height: 200px;
   padding: 0px;
-  border: 5px solid paleturquoise;
+  border: 5px solid rgb(253, 77, 151);
 }
 
 .myCircles {
@@ -309,7 +310,7 @@ ul.social-footer2 li a {
   border: 2px solid rgb(34, 31, 31);
   padding: 2rem;
   border-radius: 5px;
-  background-color: burlywood;
+  background-color: rgb(251, 155, 170);
 }
 
 
@@ -435,4 +436,7 @@ ul.social-footer2 li a {
   .form-label-group input:-ms-input-placeholder {
     color: #777;
   }
+}
+body {
+  background: linear-gradient(45deg, rgb(253, 110, 177), white);
 }
